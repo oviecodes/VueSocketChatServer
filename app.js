@@ -72,10 +72,6 @@ io.on('connection', async(socket) => {
       })
 })
 
-app.get(`/`, async(req, res) => {
-  res.send('App is running')
-})
-
 http.listen(PORT, () => {
   console.log(`listening on port ${PORT}`);
 });
