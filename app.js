@@ -17,7 +17,7 @@ const io = require("socket.io")(http, {
 
 const PORT = process.env.PORT || 5000
 
-app.use(cors())
+
 app.disable('x-powered-by')
 
 io.on('connection', async(socket) => {
