@@ -8,6 +8,7 @@ const { getUser, getUsersInRoom, addUser, deleteUser  } = require('./users')
 const app = express()
 const http = require('http').createServer(app);
 
+app.use(cors())
 const io = require("socket.io")(http, {
     cors: {
       origin: "https://pensive-turing-b41fc0.netlify.app",
