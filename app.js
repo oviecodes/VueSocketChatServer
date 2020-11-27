@@ -10,7 +10,7 @@ const http = require('http').createServer(app);
 
 const io = require("socket.io")(http, {
     cors: {
-      origin: "http://localhost:8080",
+      origin: "https://pensive-turing-b41fc0.netlify.app",
       methods: ["GET", "POST"]
     }
 });
